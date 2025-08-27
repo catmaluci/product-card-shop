@@ -1,0 +1,138 @@
+:root {
+  /* Neutral */
+  --color-white: hsl(0, 0%, 100%);
+  --color-green-500: hsl(158, 36%, 37%);
+  --color-green-700: hsl(158, 42%, 18%);
+  --color-black: hsl(212, 21%, 14%);
+  --color-grey: hsl(228, 12%, 48%);
+  --color-cream: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--color-cream);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 0px 20px hsl(30, 38%, 90%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 50%;
+  border-radius: 8px 0 0 8px;
+  object-fit: cover;
+}
+section {
+  background-color: var(--color-white);
+  width: 50%;
+  border-radius: 0 8px 8px 0;
+  padding: 2em;
+}
+
+h1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: clamp(24px, 8vw, 36px);
+  line-height: 1;
+}
+h2 {
+  letter-spacing: 4px;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--color-grey);
+}
+
+p {
+  color: var(--color-grey);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+span {
+  text-decoration: line-through;
+  display: flex;
+  align-items: center;
+  margin-left: 0.8em;
+  color: var(--color-grey);
+  font-size: 14px;
+}
+strong {
+  color: var(--color-green-500);
+  font-size: 1.8em;
+  font-family: "Fraunces", sans-serif;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+}
+button {
+  background-color: var(--color-green-500);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 95%;
+  height: 12%;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+button:hover {
+  background-color: var(--color-green-700);
+
+  
+}
+
+footer {
+  margin: 6%;
+  bottom: 0;
+  text-align: center;
+}
+
+/* Responsive Part*/
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 35%;
+    border-radius: 8px 8px 0 0;
+  }
+
+  section {
+    width: 85%;
+    border-radius: 0 0 8px 8px;
+  }
+
+  button {
+    width: 80%;
+    height: 3em;
+    margin-top: 1em;
+    font-size: 1em;
+  }
+
+}
