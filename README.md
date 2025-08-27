@@ -1,5 +1,5 @@
 # Frontend Mentor - Product Preview Card Component Solution 🔗
-This is my solution to the [Product Preview Card Component Solution challenge](https://) on Frontend Mentor.
+This is my solution to the [Product Preview Card Component Solution challenge](https://product-card-shop.vercel.app/) on Frontend Mentor.
 
 ## Overview ✨
 
@@ -43,7 +43,7 @@ I created a semantic HTML structure with:
 
 
 ## 🔗 Links
-- **🌐 Live Site URL**: [Product Preview Card Component Solution challenge](https://)
+- **🌐 Live Site URL**: [Product Preview Card Component Solution challenge](https://product-card-shop.vercel.app/)
 
 ### **👥 Solved by M Olaya** 
 <a href="https://www.linkedin.com/in/molaya">LinkedIn</a> 
